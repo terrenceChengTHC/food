@@ -1,0 +1,32 @@
+.nav>li>a {
+    color: white !important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #23527c !important;
+}
+
+body > footer {
+    background: #222;
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #888;
+    margin-top: 40px;
+}
+
+.clear-fix:after{
+    content: "020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear-fix {
+    /* 触发 hasLayout */
+    zoom: 1;
+}
+
+.banner-half {
+    margin: auto;
+    width: 810px;
+}
