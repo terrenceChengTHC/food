@@ -30,3 +30,11 @@ body > footer {
     margin: auto;
     width: 810px;
 }
+
+.widget>.content {
+    font-size: 15px;
+}
+
+.widget>h4 {
+    font-size: 17px;
+}
