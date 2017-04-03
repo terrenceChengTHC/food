@@ -7,6 +7,7 @@
     <meta name="description" content="加拿大健康食品网">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="css/index.css" rel="stylesheet">
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
@@ -38,16 +39,19 @@
 <div class="header" style="height: 70px;">
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #337ab7;border-bottom: #337ab7;">
         <div class="container" >
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#navbar-collapse-menu">
+                    <span class="sr-only">切换导航</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img class="img-responsive" src="img/logo.png" style="width: 80px;" alt=""></a>
+                <a class="navbar-brand" href="#page-top">
+                    <img class="img-responsive" src="img/logo.png" style="width: 80px;">
+                </a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="navbar-collapse-menu">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="/index.html">首页</a></li>
                     <li><a href="/product.html">产品介绍</a></li>
@@ -59,45 +63,67 @@
 </div>
 
 <main class="main" role="main">
-    <div id="banner-first" class="container" style="width: 100%">
-        <img class="animated fadeIn" src="img/store_logo.png" width="700" alt="Arctica Food" style="margin: auto;display: block;" onload="imgLoaded(this)">
-    </div>
-    <div class="container" style="width: 100%;margin-bottom: 20px;">
-        <div class="banner-half clear-fix">
-            <img class="animated bounceInLeft" id="banner-second" src="img/banner-sec-left.jpg" width="400" alt="Arctica Food" style="float: left;margin-right: 10px;" onload="imgLoaded(this)">
-            <img class="animated bounceInRight" src="img/product-best.jpg" width="400" alt="Arctica Food" style="float: left;" onload="imgLoaded(this)">
-        </div>
-    </div>
-    <div class="container" style="width: 100%;margin-bottom: 20px;">
-        <div class="banner-half clear-fix" >
-            <img class="animated bounceInLeft" src="img/product-classic.jpg" width="400" alt="Arctica Food" style="float: left;margin-right: 10px;" onload="imgLoaded(this)">
-            <img class="animated bounceInRight" src="img/product-great.jpg" width="400" alt="Arctica Food" style="float: left;" onload="imgLoaded(this)">
-        </div>
-        <div class="banner-half clear-fix" >
-            <a href="/product.html" style="display: block;text-align: center"><h4>点击查看我们的产品</h4></a>
-        </div>
-    </div>
-    <div class="container" style="width: 100%;margin-bottom: 20px;">
-        <div class="banner-half clear-fix" >
-            <img class="animated bounceInLeft" src="img/product-great.jpg" width="400" alt="Arctica Food" style="float: left;margin-right: 10px;" onload="imgLoaded(this)">
-            <div class="animated bounceInRight" style="width: 400px;float: left;">
-                <h3>营养成分分析</h3>
-                Analysis of Nutrients
-                <h4>氨基酸：</h4>
-                北极野生海参含有多种氨基酸，并可促进细胞的再生和机体损伤后的修复，还可提高淋巴细胞的免疫活性，增强人体免疫力，消除疲劳，延缓衰老，具有改善脑，性腺神经功能传导作用，减缓性腺衰老，提高勃起能力，增强生血，养血，补血作用。
-                <h4>海参素：</h4>
-                北极野生海参的海参素含量丰富，其作用为：抗肿瘤，抗菌，增强免疫力，调节造血功能，促进性功能，抗疲劳，治疗炎症，护肝保血管，成骨，抗癌，有效保护心脏。对肝炎，结核病，糖尿病，心脑血管病有显著的治疗作用。
-                <h4>海参粘多糖：</h4>
-                海参粘多糖的主要作用：抗菌，防癌，增强免疫力，抗血栓，降血糖，延缓衰老，抗病毒，抗辐射，可防止骨质疏松症，对关节炎有治疗作用。
-                <h4>脂肪酸、蛋白质、维生素、矿物营养成分：</h4>
-                北极野生海参含有人体必须的脂肪酸，花生四烯酸和EPA，有益智健脑，养血润燥，修补组织的功效。海参中主要含有蛋白质和维生素A，B，D，E，及大量的矿物营养成分，如钙，镁，锰，硅等，为天然补钙食品。
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img class="animated fadeIn" src="img/store_logo.png" width="60%" alt="Arctica Food" style="margin: auto;display: block;" onload="imgLoaded(this)">
             </div>
         </div>
-    </div>
-    <div class="container" style="width: 100%;margin-bottom: 20px;">
-        <div class="banner-half clear-fix">
-            <img class="animated bounceInLeft" src="img/right-people.jpg" width="400" alt="Arctica Food" style="float: left;margin-right: 10px;" onload="imgLoaded(this)">
-            <img class="animated bounceInRight" src="img/method.png" width="400" alt="Arctica Food" style="float: left;" onload="imgLoaded(this)">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <img class="animated bounceInLeft" src="img/banner-sec-left.jpg" width="100%" alt="Arctica Food" onload="imgLoaded(this)">
+            </div>
+            <div class="col-sm-4">
+                <img class="animated bounceInRight" src="img/product-best.jpg" width="100%" alt="Arctica Food" onload="imgLoaded(this)">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <img class="animated bounceInLeft" src="img/product-classic.jpg" width="100%" alt="Arctica Food" onload="imgLoaded(this)">
+            </div>
+            <div class="col-sm-4">
+                <img class="animated bounceInRight" src="img/product-great.jpg" width="100%" alt="Arctica Food" onload="imgLoaded(this)">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" >
+                <a href="/product.html" style="display: block;text-align: center"><h4>点击查看我们的产品</h4></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <img class="animated bounceInLeft" src="img/product-great.jpg" width="100%" alt="Arctica Food" onload="imgLoaded(this)">
+            </div>
+            <div class="col-sm-4">
+                <div class="animated bounceInRight">
+                    <h3>营养成分分析</h3>
+                    Analysis of Nutrients
+                    <h4>氨基酸：</h4>
+                    北极野生海参含有多种氨基酸，并可促进细胞的再生和机体损伤后的修复，还可提高淋巴细胞的免疫活性，增强人体免疫力，消除疲劳，延缓衰老，具有改善脑，性腺神经功能传导作用，减缓性腺衰老，提高勃起能力，增强生血，养血，补血作用。
+                    <h4>海参素：</h4>
+                    北极野生海参的海参素含量丰富，其作用为：抗肿瘤，抗菌，增强免疫力，调节造血功能，促进性功能，抗疲劳，治疗炎症，护肝保血管，成骨，抗癌，有效保护心脏。对肝炎，结核病，糖尿病，心脑血管病有显著的治疗作用。
+                    <h4>海参粘多糖：</h4>
+                    海参粘多糖的主要作用：抗菌，防癌，增强免疫力，抗血栓，降血糖，延缓衰老，抗病毒，抗辐射，可防止骨质疏松症，对关节炎有治疗作用。
+                    <h4>脂肪酸、蛋白质、维生素、矿物营养成分：</h4>
+                    北极野生海参含有人体必须的脂肪酸，花生四烯酸和EPA，有益智健脑，养血润燥，修补组织的功效。海参中主要含有蛋白质和维生素A，B，D，E，及大量的矿物营养成分，如钙，镁，锰，硅等，为天然补钙食品。
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <img class="animated bounceInLeft" src="img/right-people.jpg" width="100%" alt="Arctica Food" onload="imgLoaded(this)">
+            </div>
+            <div class="col-sm-4">
+                <img class="animated bounceInRight" src="img/method.png" width="100%" alt="Arctica Food" onload="imgLoaded(this)">
+            </div>
+            <div class="col-sm-2"></div>
         </div>
     </div>
 </main>
@@ -141,6 +167,7 @@
     </div>
 </footer>
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/handlebars.js/3.0.3/handlebars.min.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <meta name="description" content="加拿大健康食品网">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="css/index.css" rel="stylesheet">
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
@@ -38,32 +39,37 @@
 <div class="header" style="height: 70px;">
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #337ab7;border-bottom: #337ab7;">
         <div class="container" >
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#navbar-collapse-menu">
+                    <span class="sr-only">切换导航</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img class="img-responsive"  src="img/logo.png" style="width: 80px;" alt=""></a>
+                <a class="navbar-brand" href="#page-top">
+                    <img class="img-responsive" src="img/logo.png" style="width: 80px;">
+                </a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="navbar-collapse-menu">
                 <ul class="nav navbar-nav">
-                    <li><a href="/index.html">首页</a></li>
+                    <li class="active"><a href="/index.html">首页</a></li>
                     <li><a href="/product.html">产品介绍</a></li>
-                    <li class="active"><a href="/contact.html">联系我们</a></li>
+                    <li><a href="/contact.html">联系我们</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
 <main class="main" role="main">
-    <div class="container animated zoomIn" style="width: 100%">
-        <img src="img/contact-banner.jpg" width="100%" alt="Arctica Food" style="margin: auto;display: block;" onload="imgLoaded(this)">
-    </div>
-    <div class="container animated bounceInUp">
-        <div class="clear-fix" style="margin: auto;width: 1000px;" >
-            <div style="width: 500px;float: left;padding-top: 25px">
+    <div class="container">
+        <div class="row" style="margin-bottom: 25px">
+            <div class="col-sm-12">
+                <img class="animated zoomIn" src="img/contact-banner.jpg" width="100%" alt="Arctica Food" onload="imgLoaded(this)">
+            </div>
+        </div>
+        <div class="row animated bounceInUp">
+            <div class="col-sm-6">
                 <form class="form-horizontal">
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">您的姓名</label>
@@ -102,7 +108,8 @@
                     </div>
                 </form>
             </div>
-            <div style="width: 500px;float: left;padding-left: 50px">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
                 <h3>Ping Holdings (Canada) Corp.</h3>
                 <h3>浩平控股（加拿大）有限公司</h3>
                 电话：001-604-5537678；001-778-3168876<br>
@@ -111,8 +118,6 @@
             </div>
         </div>
     </div>
-
-
 </main>
 
 <footer class="main-footer">
@@ -154,6 +159,7 @@
     </div>
 </footer>
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/handlebars.js/3.0.3/handlebars.min.js"></script>
 </body>
 </html>

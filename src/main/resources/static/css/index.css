@@ -26,11 +26,6 @@ body > footer {
     zoom: 1;
 }
 
-.banner-half {
-    margin: auto;
-    width: 810px;
-}
-
 .widget>.content {
     font-size: 15px;
 }
